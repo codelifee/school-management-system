@@ -1,5 +1,8 @@
 package com.codelifee.schoolmanagement.model;
 
+import org.springframework.stereotype.Repository;
+
+@Repository
 public class StudentDTO {
 
 	private String name;

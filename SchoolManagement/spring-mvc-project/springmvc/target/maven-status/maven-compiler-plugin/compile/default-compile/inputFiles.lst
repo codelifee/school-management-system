@@ -1,9 +1,8 @@
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\exception\ExceptionController.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\login\WelcomeController.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\login\LogoutController.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\todo\Todo.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\security\LoginFilter.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\todo\TodoController.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\todo\TodoService.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\security\SecurityConfiguration.java
-C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\todo\TodoRestController.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\controller\RegistrationController.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\controller\WelcomeController.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\model\SubjectDAO.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\model\StudentDTO.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\util\DatabaseUtil.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\controller\SubjectController.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\model\StudentDAO.java
+C:\Programming\Projects\groupStudy\SchoolManagement\spring-mvc-project\springmvc\src\main\java\com\codelifee\schoolmanagement\model\SubjectDTO.java

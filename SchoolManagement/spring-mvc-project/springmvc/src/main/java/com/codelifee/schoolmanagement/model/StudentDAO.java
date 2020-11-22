@@ -1,11 +1,15 @@
 package com.codelifee.schoolmanagement.model;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.springframework.stereotype.Service;
+
 import com.codelifee.schoolmanagement.util.DatabaseUtil;
 
+@Service
 public class StudentDAO {
 
 	public int login(String name, String password) {
@@ -59,4 +63,5 @@ public class StudentDAO {
 		}
 		return -1; //register failure
 	}
+	
 }

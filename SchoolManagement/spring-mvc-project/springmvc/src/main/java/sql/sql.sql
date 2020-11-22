@@ -7,5 +7,14 @@ CREATE TABLE student (
 	subject VARCHAR2(15)
 )
 
+CREATE TABLE subject (
+	subject VARCHAR2(15) PRIMARY KEY,
+	name VARCHAR2(15)
+)
+
 Select * from student;
 
+Select * from subject;
+
+
+ALTER TABLE student DROP COLUMN subject;
