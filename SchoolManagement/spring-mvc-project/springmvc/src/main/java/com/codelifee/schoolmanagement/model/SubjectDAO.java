@@ -21,7 +21,7 @@ public class SubjectDAO {
 		try {
 			con = DatabaseUtil.getConnection();
 			pt = con.prepareStatement(sql);
-			pt.setString(1, subjectDTO.getName());
+			pt.setString(1, subjectDTO.getSubject());
 			pt.setString(2, subjectDTO.getName());
 			return pt.executeUpdate();
 		} catch(Exception e) {
@@ -57,7 +57,7 @@ public class SubjectDAO {
 	
 	public ArrayList<SubjectDTO> getList (String name) {
 		ArrayList<SubjectDTO> subjectList=null;
-		String sql="SELECT * FROM subject WHERE name = ?";
+		String sql="SELECT * FROM subject WHERE name=?";
 		Connection con=null;
 		PreparedStatement pt=null;
 		ResultSet rs=null;
@@ -67,10 +67,13 @@ public class SubjectDAO {
 			pt = con.prepareStatement(sql);
 			pt.setString(1, name);
 			rs = pt.executeQuery();
+			subjectList = new ArrayList<SubjectDTO>();
 			
 			while(rs.next()) {
-				SubjectDTO subject = new SubjectDTO(rs.getString(0), rs.getString(1));
+				SubjectDTO subject = new SubjectDTO(rs.getString(1), rs.getString(2));
+				System.out.println(rs);
 				subjectList.add(subject);
+				System.out.println(subjectList);
 			} 
 		} catch(Exception e) {
 			e.printStackTrace();
@@ -79,6 +82,9 @@ public class SubjectDAO {
 			try {if(pt != null) pt.close();} catch (Exception e) {e.printStackTrace();}
 			try {if(rs != null) rs.close();} catch (Exception e) {e.printStackTrace();}
 		}
+		
+		
+		System.out.println(subjectList);
 		return subjectList;
 	}
 }

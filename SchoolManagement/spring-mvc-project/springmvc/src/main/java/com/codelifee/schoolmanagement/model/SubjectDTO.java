@@ -8,11 +8,11 @@ public class SubjectDTO {
 	private String subject;
 	private String name;
 	
-	SubjectDTO() {
+	public SubjectDTO() {
 		
 	}
 	
-	SubjectDTO(String subject, String name) {
+	public SubjectDTO(String subject, String name) {
 		this.subject = subject;
 		this.name = name;
 	}

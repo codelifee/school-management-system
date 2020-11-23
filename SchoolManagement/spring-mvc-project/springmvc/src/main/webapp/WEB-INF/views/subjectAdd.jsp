@@ -3,8 +3,8 @@
 
 	
 	<section class="container">
-		<input type="text" name="search" class="form-control mx-1 mx-2" placeholder="please type your name">
-		<form mathod="get" action="./search" class="form-inline mt-3">
+		<form method="post" action="/subjectAdd" class="form-inline mt-3">
+			<input type="text" name="name" class="form-control mx-1 mx-2" placeholder="please type your name">
 			<select name="subjectDivide" class="form-control mx-1 mt-2">
 				<option value="history">history</option>
 				<option value="Mathmatics">Mathmatics</option>

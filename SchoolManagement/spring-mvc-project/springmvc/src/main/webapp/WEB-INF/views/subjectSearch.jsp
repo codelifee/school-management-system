@@ -3,11 +3,10 @@
 
 	
 	<section class="container">
-		<form method="get" action="/subjectSearch" class="form-inline mt-3">
+		<form method="post" action="/subjectSearch" class="form-inline mt-3">
 			<input type="text" name="search" class="form-control mx-1 mx-2" placeholder="please type your name">
 			
 			<button type="submit" class="btn btn-primary mx-1 mt-2">search</button>
-			<a class="btn btn-primary mx-1 mt-2" data-toggle="modal" href="/subjectAdd">add</a>
 		</form>
 	</section>
 	
@@ -25,9 +24,12 @@
 					<tr>
 						<td>${subject.getName()}</td>
 						<td>${subject.getSubject()}</td>
-						<td><a href="/subjectDelete?subject=${subject.getSubject()}" class="btn btn-danger"></a></td>
+						<td><a href="/subjectDelete?subject=${subject.getSubject()}" class="btn btn-danger">Delete</a></td>
 					</tr>
 				</c:forEach>
+				<tr>
+				
+				</tr>
 			</tbody>
 		</table>
 		
