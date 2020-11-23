@@ -77,7 +77,7 @@ public class SubjectController {
 		if(result == 1) {
 			model.addAttribute("welcome", "deleted");
 			
-			return "redirect:subjectSearch";
+			return "welcome";
 		}
 		
 		return "error";
