@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:06:46 +0900] "GET / HTTP/1.1" 200 960 http-bio-8080-exec-1 105
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:06:46 +0900] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-8080-exec-3 13
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:06:46 +0900] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 200 36868 http-bio-8080-exec-4 9
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:06:46 +0900] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-2 12
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:06:47 +0900] "GET /favicon.ico HTTP/1.1" 404 949 http-bio-8080-exec-7 4
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:27 +0900] "GET /register HTTP/1.1" 200 1262 http-bio-8080-exec-8 20
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:33 +0900] "POST /registerProcess HTTP/1.1" 200 947 http-bio-8080-exec-9 1195
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:38 +0900] "GET /login HTTP/1.1" 200 1249 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:41 +0900] "POST /login HTTP/1.1" 200 1019 http-bio-8080-exec-10 81
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:44 +0900] "GET /subjects HTTP/1.1" 200 1194 http-bio-8080-exec-10 10
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:46 +0900] "POST /subjectSearch HTTP/1.1" 200 1439 http-bio-8080-exec-10 64
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:48 +0900] "GET /subjectAdd HTTP/1.1" 200 1514 http-bio-8080-exec-10 7
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:51 +0900] "POST /subjectAdd HTTP/1.1" 200 1015 http-bio-8080-exec-10 54
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:54 +0900] "GET /subjectAdd HTTP/1.1" 200 1514 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:54 +0900] "GET /subjects HTTP/1.1" 200 1194 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [30/Nov/2020:20:07:56 +0900] "POST /subjectSearch HTTP/1.1" 200 1609 http-bio-8080-exec-10 48
