@@ -38,7 +38,9 @@ public class SubjectController {
 	public String showSubject(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
 		String name = request.getParameter("name");
 		
-		model.addAttribute("subjects", service.getList(name));
+		subject.setName(name);
+		
+		model.addAttribute("subjects", service.getList(subject));
 		
 		return "subjectSearch";
 		
@@ -68,7 +70,11 @@ public class SubjectController {
 	
 	@RequestMapping(path="/subjectDelete", method= RequestMethod.GET)
 	public String deleteSubject(ModelMap model, HttpServletRequest request, HttpServletResponse response) {
-		String subject = request.getParameter("subject");
+		String sub = request.getParameter("subject");
+		
+		subject.setSubject(sub);
+		
+		System.out.println(subject.getSubject());
 		
 		int result = service.delete(subject);
 		
@@ -76,9 +82,10 @@ public class SubjectController {
 			model.addAttribute("welcome", "deleted");
 			
 			return "welcome";
-		}
-		
-		return "error";
+		} else {
+			return "error";
+
+		}	
 	}
 	
 	

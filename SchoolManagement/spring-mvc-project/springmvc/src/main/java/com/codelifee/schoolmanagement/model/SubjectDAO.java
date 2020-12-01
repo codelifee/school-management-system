@@ -34,7 +34,7 @@ public class SubjectDAO {
 		return -1; //database error
 	}
 	
-	public int delete(String subject) {
+	public int delete(SubjectDTO sub) {
 		String sql = "DELETE FROM subject where subject=?";
 		Connection con =null;
 		PreparedStatement pt = null;
@@ -43,7 +43,7 @@ public class SubjectDAO {
 		try {
 			con = DatabaseUtil.getConnection();
 			pt = con.prepareStatement(sql);
-			pt.setString(1, subject); 
+			pt.setString(1, sub.getSubject()); 
 			return pt.executeUpdate();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -55,7 +55,7 @@ public class SubjectDAO {
 		return -1; // database error
 	}
 	
-	public ArrayList<SubjectDTO> getList (String name) {
+	public ArrayList<SubjectDTO> getList (SubjectDTO sub) {
 		ArrayList<SubjectDTO> subjectList=null;
 		String sql="SELECT * FROM subject WHERE name=?";
 		Connection con=null;
@@ -65,7 +65,7 @@ public class SubjectDAO {
 		try {
 			con = DatabaseUtil.getConnection();
 			pt = con.prepareStatement(sql);
-			pt.setString(1, name);
+			pt.setString(1, sub.getName());
 			rs = pt.executeQuery();
 			subjectList = new ArrayList<SubjectDTO>();
 			

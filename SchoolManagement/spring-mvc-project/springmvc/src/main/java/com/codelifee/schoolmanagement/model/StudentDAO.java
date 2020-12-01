@@ -12,7 +12,7 @@ import com.codelifee.schoolmanagement.util.DatabaseUtil;
 @Service
 public class StudentDAO {
 
-	public int login(String name, String password) {
+	public int login(StudentDTO stu) {
 		String sql = "SELECT password FROM student WHERE name=?";
 		Connection con = null;
 		PreparedStatement pt = null;
@@ -21,11 +21,11 @@ public class StudentDAO {
 		try {
 			con = DatabaseUtil.getConnection();
 			pt = con.prepareStatement(sql);
-			pt.setString(1, name);
+			pt.setString(1, stu.getName());
 			rs = pt.executeQuery();
 			
 			if(rs.next()) {
-				if(rs.getString(1).equals(password)) {
+				if(rs.getString(1).equals(stu.getPassword())) {
 					return 1; // login success
 				} else {
 					return 0; // wrong password

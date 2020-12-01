@@ -63,7 +63,7 @@ public class RegistrationController {
 			student.setName(name);
 			student.setPassword(password);
 			
-			studentService.login(student.getName(),student.getPassword());
+			studentService.login(student);
 			
 			model.addAttribute("welcome", "logged in");
 			
